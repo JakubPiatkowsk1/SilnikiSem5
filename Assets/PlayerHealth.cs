@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 10;
@@ -24,7 +25,7 @@ public class PlayerHealth : MonoBehaviour
         {
             health = maxHealth;
         }
-        else if (health <= 0)
+        else if(health <= 0)
         {
             Die();
         }
@@ -34,6 +35,4 @@ public class PlayerHealth : MonoBehaviour
     {
         Death?.Invoke();
     }
-
-    
 }
